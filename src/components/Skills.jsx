@@ -67,7 +67,8 @@ function Skills() {
 
                 bg-white/60
                 backdrop-blur-2xl
-                border border-white/40
+
+                border border-gray-300
 
                 shadow-[0_15px_60px_rgba(168,85,247,0.08)]
                 hover:shadow-[0_25px_80px_rgba(244,63,94,0.12)]
