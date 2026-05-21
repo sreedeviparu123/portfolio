@@ -1,33 +1,33 @@
 import React from "react";
 
-function Skills() {
-  const skills = [
-    {
-      title: "React",
-      desc: "Building dynamic and component-based user interfaces",
-    },
-    {
-      title: "JavaScript",
-      desc: "Core logic for interactive and modern web applications",
-    },
-    {
-      title: "HTML",
-      desc: "Structured foundation of all web pages",
-    },
-    {
-      title: "CSS",
-      desc: "Styling, layout design, and responsive UI creation",
-    },
-    {
-      title: "Python",
-      desc: "Programming for backend logic and automation",
-    },
-    {
-      title: "Java",
-      desc: "Object-oriented programming and application development",
-    },
-  ];
+const skills = [
+  {
+    title: "React",
+    desc: "Building dynamic and component-based user interfaces",
+  },
+  {
+    title: "JavaScript",
+    desc: "Core logic for interactive and modern web applications",
+  },
+  {
+    title: "HTML",
+    desc: "Structured foundation of all web pages",
+  },
+  {
+    title: "CSS",
+    desc: "Styling, layout design, and responsive UI creation",
+  },
+  {
+    title: "Python",
+    desc: "Programming for backend logic and automation",
+  },
+  {
+    title: "Java",
+    desc: "Object-oriented programming and application development",
+  },
+];
 
+function Skills() {
   return (
     <section
       id="skills"
@@ -37,20 +37,22 @@ function Skills() {
 
         {/* HEADER */}
         <div className="mb-14">
-          <p className="text-sm tracking-[0.3em] uppercase text-purple-400 font-semibold mb-3">
+
+          <p className="text-sm tracking-[0.3em] uppercase text-purple-500 font-semibold mb-3">
             Skills
           </p>
 
-          <h2 className="font-heading text-4xl lg:text-5xl font-black text-slate-900">
+          <h2 className="text-4xl lg:text-5xl font-black text-slate-900">
             Skills & Expertise
           </h2>
 
-          <div className="w-20 h-[3px] mt-4 bg-gradient-to-r from-purple-400 to-rose-400 rounded-full"></div>
+          <div className="w-20 h-[3px] mt-4 bg-gradient-to-r from-purple-500 to-rose-500 rounded-full"></div>
 
           <p className="mt-6 text-slate-600 max-w-[650px] leading-8">
-            A refined collection of technologies I use to design and build modern,
-            scalable, and visually elegant web applications.
+            A refined collection of technologies I use to design and build
+            modern, scalable, and visually elegant web applications.
           </p>
+
         </div>
 
         {/* GRID */}
@@ -65,28 +67,59 @@ function Skills() {
                 p-8
                 rounded-[28px]
 
-                bg-white/60
+                bg-white/70
                 backdrop-blur-2xl
                 border border-white/40
 
-                shadow-[0_15px_60px_rgba(168,85,247,0.08)]
-                hover:shadow-[0_25px_80px_rgba(244,63,94,0.12)]
+                shadow-[0_10px_40px_rgba(168,85,247,0.10)]
+                hover:shadow-[0_20px_70px_rgba(168,85,247,0.25)]
 
-                hover:-translate-y-2
-                transition-all duration-300
+                hover:-translate-y-3
+                transition-all duration-500 ease-out
               "
             >
 
-              {/* glow background */}
-              <div className="absolute -top-20 -right-20 w-40 h-40 bg-purple-300/30 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition"></div>
+              {/* GLOW EFFECT */}
+              <div
+                className="
+                  absolute inset-0
+                  opacity-0 group-hover:opacity-100
+                  transition duration-500
+                "
+              >
 
+                {/* TOP LEFT GLOW */}
+                <div
+                  className="
+                    absolute -top-10 -left-10
+                    w-40 h-40
+                    bg-purple-400/30
+                    rounded-full
+                    blur-3xl
+                  "
+                ></div>
+
+                {/* BOTTOM RIGHT GLOW */}
+                <div
+                  className="
+                    absolute bottom-0 right-0
+                    w-32 h-32
+                    bg-rose-400/30
+                    rounded-full
+                    blur-3xl
+                  "
+                ></div>
+
+              </div>
+
+              {/* CONTENT */}
               <div className="relative z-10">
 
                 {/* DOT */}
                 <div className="w-3 h-3 rounded-full bg-gradient-to-r from-purple-500 to-rose-500 mb-6"></div>
 
                 {/* TITLE */}
-                <h3 className="font-heading text-2xl font-bold text-slate-900">
+                <h3 className="text-2xl font-bold text-slate-900">
                   {skill.title}
                 </h3>
 
@@ -96,9 +129,19 @@ function Skills() {
                 </p>
 
                 {/* UNDERLINE */}
-                <div className="mt-6 w-12 h-[2px] bg-gradient-to-r from-purple-400 to-rose-400 group-hover:w-20 transition-all rounded-full"></div>
+                <div
+                  className="
+                    mt-6
+                    w-12 h-[2px]
+                    bg-gradient-to-r from-purple-400 to-rose-400
+                    rounded-full
+                    group-hover:w-20
+                    transition-all duration-300
+                  "
+                ></div>
 
               </div>
+
             </div>
           ))}
 
