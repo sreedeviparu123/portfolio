@@ -68,7 +68,7 @@ function Skills() {
                 bg-white/60
                 backdrop-blur-2xl
 
-                border-2 border-gray-300
+                border-4 border-gray-300
 
                 shadow-[0_15px_60px_rgba(168,85,247,0.08)]
                 hover:shadow-[0_25px_80px_rgba(244,63,94,0.12)]
@@ -100,6 +100,7 @@ function Skills() {
                 <div className="mt-6 w-12 h-[2px] bg-gradient-to-r from-purple-400 to-rose-400 group-hover:w-20 transition-all rounded-full"></div>
 
               </div>
+
             </div>
           ))}
 
