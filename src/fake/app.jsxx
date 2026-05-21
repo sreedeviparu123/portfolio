@@ -1,0 +1,151 @@
+import "./App.css";
+
+function App() {
+  return (
+    <div className="portfolio">
+
+      {/* NAVBAR */}
+      <nav className="navbar">
+
+        <h1 className="logo">SREEDEVI B L</h1>
+
+        <div className="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+      </nav>
+
+      {/* HERO SECTION */}
+      <section className="hero">
+
+        <div className="hero-content">
+
+          <p className="intro">
+            FRONTEND DEVELOPER
+          </p>
+
+          <h1>
+            Sreedevi B L
+          </h1>
+
+          <p className="hero-text">
+            Passionate Computer Engineering student focused on
+            designing elegant user interfaces and modern
+            responsive applications using React and frontend technologies.
+          </p>
+
+          <div className="hero-buttons">
+
+            <button className="primary-btn">
+              View Projects
+            </button>
+
+            <button className="secondary-btn">
+              Contact Me
+            </button>
+
+          </div>
+
+        </div>
+
+        {/* RIGHT CARD */}
+
+        <div className="hero-card">
+
+          <div className="card-circle"></div>
+
+          <h2>Sreedevi B L</h2>
+
+          <span>Frontend Developer</span>
+
+          <div className="line"></div>
+
+          <p>
+            React • JavaScript • UI Design
+          </p>
+
+        </div>
+
+      </section>
+
+      {/* ABOUT */}
+
+      <section id="about" className="section">
+
+        <h2>About Me</h2>
+
+        <div className="card">
+
+          <p>
+            I enjoy creating premium web interfaces with clean
+            design and smooth user experience. I am passionate
+            about frontend development, responsive design,
+            and modern web technologies.
+          </p>
+
+        </div>
+
+      </section>
+
+      {/* SKILLS */}
+
+      <section id="skills" className="section">
+
+        <h2>Skills</h2>
+
+        <div className="skills">
+
+          <div className="skill">React</div>
+          <div className="skill">JavaScript</div>
+          <div className="skill">HTML</div>
+          <div className="skill">CSS</div>
+          <div className="skill">Python</div>
+          <div className="skill">Java</div>
+
+        </div>
+
+      </section>
+
+      {/* PROJECT */}
+
+      <section id="projects" className="section">
+
+        <h2>Featured Project</h2>
+
+        <div className="project-card">
+
+          <h3>Donor Connect</h3>
+
+          <p>
+            Smart donor and receiver connection platform designed
+            to help users quickly during emergencies and support situations.
+          </p>
+
+        </div>
+
+      </section>
+
+      {/* CONTACT */}
+
+     </p>
+
+        </div>
+
+      </section> <section id="contact" className="section">
+
+        <h2>Contact</h2>
+
+        <div className="card">
+
+          <p>Email : sreedevivl2006@gmail.com</p>
+          <p>Phone : 7306900852</p>
+          <p>Location : Kerala,india
+
+    </div>
+  );
+}
+
+export default App;
